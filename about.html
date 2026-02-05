@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@300..800&family=Playfair+Display:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Sibijan | about</title>
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="logo">
+            <h3><span>S</span>ibijan.S</h3>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="header-list">
+            <li><a href="index.html" class="fade-link" data-link>Home</a></li>
+            <li><a href="about.html" class="fade-link active" data-link>About</a></li>
+            <li><a href="project.html" class="fade-link" data-link>Projects</a></li>
+            <li><a href="certificates.html" class="fade-link" data-link>Certificates</a></li>
+            <li><a href="contact.html" class="fade-link" data-link>Contact</a></li>
+        </ul>
+
+        <ul class="header-list-icon">
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://github.com/Sibijan"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/sibijan/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+    </header>
+
+    <!-- ===== IMAGE POPUP MODAL ===== -->
+    <!-- IMAGE POPUP MODAL -->
+    <div class="image-modal" id="imageModal">
+        <span class="close-modal" id="closeModal">&times;</span>
+
+        <div class="modal-content">
+            <img src="images/portimage.png" alt="Sibijan">
+
+            <div class="modal-text">
+                <h3 class="reveal name">Sibijan.S</h3>
+                <p class="reveal role">Junior Data Analyst</p>
+                <p class="reveal skills">Python • SQL • Power BI • Azure</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ===== SLIDE MENU (MOBILE) ===== -->
+    <div class="slide-menu" id="slide-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about" id="about">
+
+        <div class="about-info">
+            <div class="img-about">
+                <!-- THIS IMAGE OPENS THE MODAL -->
+                <img src="images/portimage.png" alt="Sibijan" class="profile-img" id="openModal">
+            </div>
+
+            <div class="info-text">
+                <h5>SIBIJAN.S</h5>
+                <p>Junior Data Analyst</p>
+            </div>
+        </div>
+
+        <h3>ABOUT ME</h3>
+
+        <div class="about-info2">
+            <div class="about-text">
+                <p>Hi! I’m Sibijan S, a motivated Junior Data Analyst with hands-on experience in Python, SQL, and data
+                    visualization.</p>
+
+                <p>I enjoy working with real-world datasets—cleaning, analyzing, and transforming raw data into
+                    meaningful insights that support data-driven decisions.</p>
+
+                <p>Through academic projects and internships, I have built end-to-end data analysis solutions involving
+                    data preprocessing, exploratory data analysis (EDA), and interactive dashboards.</p>
+
+                <p>Right now, I’m focused on strengthening my skills in:</p>
+
+                <p><span>#</span> Python, Pandas, NumPy, Scikit-learn</p>
+                <p><span>#</span> SQL (MySQL, PostgreSQL)</p>
+                <p><span>#</span> Power BI, Excel, Data Visualization</p>
+                <p><span>#</span> Building practical projects and continuously learning analytics tools used in the
+                    industry.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Main JS -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
