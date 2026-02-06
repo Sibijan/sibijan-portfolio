@@ -869,35 +869,35 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
-/* ===== Mobile Hero Fix ===== */
+/* ===== FINAL MOBILE HEADER FIX (GUARANTEED) ===== */
 @media (max-width: 768px) {
-  .home-text {
-    margin-top: 0;
-  }
 
-  .home-text h2 {
-    font-size: 2rem;
-  }
-
-  .home-text p {
-    font-size: 0.95rem;
-  }
-}
-/* ===== MOBILE HEADER FIX ===== */
-@media (max-width: 768px) {
   header {
-    justify-content: center;
-  }
-
-  .menu-toggle {
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;   /* center logo */
+    align-items: center;
+    position: fixed;
+    height: 70px;
   }
 
   .logo {
-    text-align: center;
+    margin: 0 auto;
+    z-index: 2;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    left: 15px;               /* 👈 FORCE LEFT */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 26px;
+    z-index: 3;
+  }
+
+  .header-list,
+  .header-list-icon {
+    display: none !important;
   }
 }
 
