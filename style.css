@@ -552,15 +552,16 @@ header {
 .slide-menu {
     position: fixed;
     top: 0;
-    right: -260px;
+    left: -260px;          /* 👈 start hidden on LEFT */
     width: 260px;
     height: 100%;
     background-color: #111;
     color: #fff;
-    transition: 0.3s ease;
+    transition: left 0.3s ease;
     z-index: 2000;
     padding-top: 60px;
 }
+
 
 .slide-menu ul {
     list-style: none;
@@ -584,7 +585,7 @@ header {
 }
 
 .slide-menu.active {
-    right: 0; 
+    left: 0; 
 }
 
 @media screen and (max-width: 768px) {
