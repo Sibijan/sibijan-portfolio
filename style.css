@@ -901,4 +901,19 @@ header {
     display: none !important;
   }
 }
+/* ===== FORCE LEFT SLIDE MENU (FINAL OVERRIDE) ===== */
+@media (max-width: 768px) {
+
+  .slide-menu {
+    left: -260px !important;
+    right: auto !important;
+    transform: none !important;
+  }
+
+  .slide-menu.active {
+    left: 0 !important;
+    right: auto !important;
+    transform: none !important;
+  }
+}
 
