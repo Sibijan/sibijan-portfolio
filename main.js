@@ -158,5 +158,29 @@ if (openModal && modal && closeModal) {
   });
 
 }
+/* ===== CERTIFICATE IMAGE POPUP ===== */
+const certImages = document.querySelectorAll(".cert-img");
+const certModal = document.getElementById("certModal");
+const certModalImg = document.getElementById("certModalImg");
+const closeCert = document.getElementById("closeCert");
+
+if (certImages && certModal) {
+  certImages.forEach(img => {
+    img.addEventListener("click", () => {
+      certModal.style.display = "flex";
+      certModalImg.src = img.src;
+    });
+  });
+
+  closeCert.addEventListener("click", () => {
+    certModal.style.display = "none";
+  });
+
+  certModal.addEventListener("click", (e) => {
+    if (e.target === certModal) {
+      certModal.style.display = "none";
+    }
+  });
+}
 
 
