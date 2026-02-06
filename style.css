@@ -870,3 +870,18 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+/* ===== Mobile Hero Fix ===== */
+@media (max-width: 768px) {
+  .home-text {
+    margin-top: 0;
+  }
+
+  .home-text h2 {
+    font-size: 2rem;
+  }
+
+  .home-text p {
+    font-size: 0.95rem;
+  }
+}
+
