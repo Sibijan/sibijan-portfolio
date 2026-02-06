@@ -916,4 +916,16 @@ header {
     transform: none !important;
   }
 }
+@media (max-width: 768px) {
+    .socials-icon {
+        display: block;
+        position: static;
+        padding: 10px;
+        text-align: center;
+    }
 
+    .socials-icon i {
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
