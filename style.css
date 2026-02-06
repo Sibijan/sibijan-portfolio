@@ -13,11 +13,10 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 20px 40px;
-    font-family: "Roboto", sans-serif;
     background: #fff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     z-index: 1000;
 }
+
 
 .logo {
     font-size: 20px;
@@ -882,6 +881,23 @@ header {
 
   .home-text p {
     font-size: 0.95rem;
+  }
+}
+/* ===== MOBILE HEADER FIX ===== */
+@media (max-width: 768px) {
+  header {
+    justify-content: center;
+  }
+
+  .menu-toggle {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .logo {
+    text-align: center;
   }
 }
 
