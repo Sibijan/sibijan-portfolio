@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-}); // ✅ THIS WAS MISSING
+}); 
 
 
   /* =========================
